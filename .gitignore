@@ -1,0 +1,13 @@
+*.ipynb
+*.pyc
+*.log
+
+
+__pycache__
+
+*model_epoch*
+*model_best*
+*/Comp*/*.pth.tar
+*/Bottle*/*.pth.tar
+*/Test*/*.pth.tar
+*/Ours_*/*.pth.tar

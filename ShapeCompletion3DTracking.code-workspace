@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": ".",
+		}
+	],
+	"settings": {
+		"editor.rulers": [
+			72,
+			79,
+			119
+		],
+		"python.formatting.provider": "yapf",
+		"python.formatting.yapfArgs": [
+			"--style=google"
+		],
+		"python.linting.pep8Enabled": true,
+		"python.linting.pylintEnabled": true,
+		"python.linting.flake8Enabled": true,
+		"python.linting.flake8Args": [
+			"--ignore=E128",
+			"--max-line-length=80",	
+		],
+		"python.linting.pep8Args": [
+			"--ignore=E128",
+			"--max-line-length=80"
+		],
+		"python.linting.pylintArgs": [
+			"--disable=C0111,C0103,C0411,C1801,R0913,E0611",
+			"--generated-members=torch.**, argparse.Namespace.**, PyQt5.QtWidgets.**",
+			"--ignored-modules=torch"
+		],
+	}
+}

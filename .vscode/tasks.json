@@ -1,0 +1,18 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Testing best model",
+            "type": "shell",
+            "command": "python main.py --model_name=Ours --dataset_path=/media/giancos/Football/KITTI/tracking/training --test_model",
+            "problemMatcher": []
+        },
+        {
+            "label": "Train best model",
+            "type": "shell",
+            "command": "python main.py --model_name=New --dataset_path=/media/giancos/Football/KITTI/tracking/training --train_model"
+        }
+    ]
+}
