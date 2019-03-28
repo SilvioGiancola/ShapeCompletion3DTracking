@@ -1,5 +1,7 @@
 # Leveraging Shape Completion for 3D Siamese Tracking
-Supplementary Code for the CVPR'19 paper entitled: "Leveraging Shape Completion for 3D Siamese Tracking"
+Supplementary Code for the CVPR'19 paper entitled [Leveraging Shape Completion for 3D Siamese Tracking](https://arxiv.org/pdf/1903.01784.pdf)
+
+[![Supplementary Video](https://img.youtube.com/vi/2-NAaWSSrGA/0.jpg)](https://www.youtube.com/watch?v=2-NAaWSSrGA "Supplementary Video")
 
 ## Citation
 
@@ -18,6 +20,12 @@ year = {2019}
 
 `Still under construction`
 
+## Download KITTI Tracking dataset
+
+Download the datset from [here](http://www.cvlibs.net/datasets/kitti/).
+
+
+
 ## Create Environment
 
 ```
@@ -27,12 +35,10 @@ conda install -y pytorch=0.4.1 cuda90 -c pytorch
 pip install pyquaternion 
 ```
 
-## Download KITTI Tracking dataset
-
 
 ## Train a model
 
-`python main.py --model_name=myModel --dataset_path=<Path to KITTI Tracking> --train_model` 
+`python main.py --train_model --model_name=<Name of your model> --dataset_path=<Path to KITTI Tracking>` 
 
 
 ```
@@ -40,12 +46,12 @@ OPT:
     --model_name=<Name of your model>
     --dataset_path=<Path to KITTI Tracking>
     --GPU=1: enforce the use of GPU 1 
-    --tiny: use a tiny set of KITTI
+    --tiny: use a tiny set of KITTI Tracking
 ```
 
 ## Test a model
 
-`python main.py --model_name=myModel --dataset_path=<Path to KITTI Tracking> --test_model` 
+`python main.py --test_model --model_name=<Name of your model> --dataset_path=<Path to KITTI Tracking>` 
 
 
 ```
@@ -53,5 +59,5 @@ OPT:
     --model_name=<Name of your model>
     --dataset_path=<Path to KITTI Tracking>
     --GPU=1: enforce the use of GPU 1 
-    --tiny: use a tiny set of KITTI
+    --tiny: use a tiny set of KITTI Tracking
 ```
