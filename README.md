@@ -18,11 +18,26 @@ year = {2019}
 
 # Usage
 
-`Still under construction`
 
 ## Download KITTI Tracking dataset
 
-Download the datset from [here](http://www.cvlibs.net/datasets/kitti/).
+Download the dataset from [KITTI Tracking](http://www.cvlibs.net/datasets/kitti/eval_tracking.php).
+
+You will need to download the data for
+[velodyne](http://www.cvlibs.net/download.php?file=data_tracking_velodyne.zip), 
+[calib](http://www.cvlibs.net/download.php?file=data_tracking_calib.zip) and
+[label_02](http://www.cvlibs.net/download.php?file=data_tracking_label_2.zip).
+
+Place the 3 folders in the same parent folder as following:
+```
+[Parent Folder]
+--> [calib]
+    --> {0000-0020}.txt
+--> [label_02]
+    --> {0000-0020}.txt
+--> [velodyne]
+    --> [0000-0020] folders with velodynes .bin files
+```
 
 
 
@@ -38,7 +53,7 @@ pip install pyquaternion
 
 ## Train a model
 
-`python main.py --train_model --model_name=<Name of your model> --dataset_path=<Path to KITTI Tracking>` 
+`python main.py --train_model --model_name=<Name of your model> --dataset_path=<Path to KITTI Tracking folder>` 
 
 
 ```
@@ -51,7 +66,7 @@ OPT:
 
 ## Test a model
 
-`python main.py --test_model --model_name=<Name of your model> --dataset_path=<Path to KITTI Tracking>` 
+`python main.py --test_model --model_name=<Name of your model> --dataset_path=<Path to KITTI Tracking folder>` 
 
 
 ```
