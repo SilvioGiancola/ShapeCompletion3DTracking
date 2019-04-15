@@ -57,7 +57,7 @@ pip install pyquaternion
 
 ### Options
 
-Run `python main.py --help` for an detailled description of the parameters.
+Run `python main.py --help` for a detailled description of the parameters.
 
 ```
 OPT:
