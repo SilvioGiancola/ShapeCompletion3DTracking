@@ -7,9 +7,9 @@ Supplementary Code for the CVPR'19 paper entitled [Leveraging Shape Completion f
 ### Citation
 
 ```bibtex
-@InProceedings{Giancola_2018_CVPR,
+@InProceedings{Giancola_2019_CVPR,
 author = {Giancola, Silvio and Zarzar, Jesus and Ghanem, Bernard},
-title = {Leverage Shape Completion for 3D Siamese Tracking},
+title = {Leveraging Shape Completion for 3D Siamese Tracking},
 booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
 month = {June},
 year = {2019}
