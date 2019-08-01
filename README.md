@@ -69,7 +69,7 @@ OPT:
     --tiny: use a tiny set of KITTI Tracking
 ```
 
-### Visualize the results
+## Visualize the results
 
 You can create the GIF visualization from the supplementary material running
 the following command:
