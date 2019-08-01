@@ -346,10 +346,8 @@ if __name__ == '__main__':
         os.environ["CUDA_VISIBLE_DEVICES"] = str(args.GPU)
 
     if(args.model_path is not None and args.model_path is not ""):
-        # print("BAD")
         args.finetune = os.path.join(args.model_path, "model.pth.tar")
     else:
-        # print("GOOD")
         args.finetune = ""
 
     start = time.time()

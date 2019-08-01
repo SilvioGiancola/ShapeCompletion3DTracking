@@ -41,7 +41,7 @@ Place the 3 folders in the same parent folder as following:
 ### Create Environment
 
 ```
-conda create -y -n ShapeCompletion3DTracking python tqdm numpy pandas shapely matplotlib pomegranate
+conda create -y -n ShapeCompletion3DTracking python tqdm numpy pandas shapely matplotlib pomegranate ipykernel jupyter imageio
 source activate ShapeCompletion3DTracking
 conda install -y pytorch=0.4.1 cuda90 -c pytorch
 pip install pyquaternion
@@ -67,4 +67,36 @@ OPT:
     --bneck_size=128: lenght of the latent vector
     --GPU=1: enforce the use of GPU 1 
     --tiny: use a tiny set of KITTI Tracking
+```
+
+
+### Visualize the results
+
+You can create the GIF visualization from the supplementary material running
+the following command:
+
+python VisualizeTracking.py --model_name Ours --track 29 --path_KITTI <PATH_KITTI>
+
+python VisualizeTracking.py --model_name PreTrained --track 29 --path_KITTI <PATH_KITTI>
+
+python VisualizeTracking.py --model_name Random --track 29 --path_KITTI <PATH_KITTI>
+
+```
+usage: VisualizeTracking.py [-h] [--GPU GPU] [--model_name MODEL_NAME]
+                            [--track TRACK] [--path_results PATH_RESULTS]
+                            [--path_KITTI PATH_KITTI]
+
+Visualize Tracking Results
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --GPU GPU             ID of the GPU to use (default: -1)
+  --model_name MODEL_NAME
+                        model to infer (Random/Pretrain/Ours) (default: Ours)
+  --track TRACK         track to infer (supp. mat. are 29/45/91) (default: 29)
+  --path_results PATH_RESULTS
+                        path to save the results (default: ../results)
+  --path_KITTI PATH_KITTI
+                        path for the KITTI dataset (default:
+                        KITTI/tracking/training)
 ```
