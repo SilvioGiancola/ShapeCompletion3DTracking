@@ -74,11 +74,11 @@ OPT:
 You can create the GIF visualization from the supplementary material running
 the following command:
 
-python VisualizeTracking.py --model_name Ours --track 29 --path_KITTI <PATH_KITTI>
+`python VisualizeTracking.py --model_name Ours --track 29 --path_KITTI <PATH_KITTI>`
 
-python VisualizeTracking.py --model_name PreTrained --track 29 --path_KITTI <PATH_KITTI>
+`python VisualizeTracking.py --model_name PreTrained --track 29 --path_KITTI <PATH_KITTI>`
 
-python VisualizeTracking.py --model_name Random --track 29 --path_KITTI <PATH_KITTI>
+`python VisualizeTracking.py --model_name Random --track 29 --path_KITTI <PATH_KITTI>`
 
 ```
 usage: VisualizeTracking.py [-h] [--GPU GPU] [--model_name MODEL_NAME]
