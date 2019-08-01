@@ -100,7 +100,24 @@ optional arguments:
                         KITTI/tracking/training)
 ```
 
-Tracking and Reconstruction of sample 29 from KITTI Tracking Dataset using our method
+Tracking and Reconstruction of sample 29 from KITTI Tracking Dataset:
+
+
+ - using random weights
+
+<div align="center">
+  <img src="https://github.com/SilvioGiancola/ShapeCompletion3DTracking/blob/master/results/0029_Random_Tracking.gif" width="400">
+  <img src="https://github.com/SilvioGiancola/ShapeCompletion3DTracking/blob/master/results/0029_Random_Reconstruction.gif" width="400">
+</div>
+
+ - using PreTrained weights
+
+<div align="center">
+  <img src="https://github.com/SilvioGiancola/ShapeCompletion3DTracking/blob/master/results/0029_PreTrained_Tracking.gif" width="400">
+  <img src="https://github.com/SilvioGiancola/ShapeCompletion3DTracking/blob/master/results/0029_PreTrained_Reconstruction.gif" width="400">
+</div>
+
+ - using Our training
 
 <div align="center">
   <img src="https://github.com/SilvioGiancola/ShapeCompletion3DTracking/blob/master/results/0029_Ours_Tracking.gif" width="400">
