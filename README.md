@@ -99,3 +99,13 @@ optional arguments:
                         path for the KITTI dataset (default:
                         KITTI/tracking/training)
 ```
+
+Tracking and Reconstruction of sample 29 from KITTI Tracking Dataset using our method
+
+<div align="center">
+  <img src="https://github.com/SilvioGiancola/ShapeCompletion3DTracking/blob/master/results/0029_Ours_Tracking.gif" width="400">
+  <img src="https://github.com/SilvioGiancola/ShapeCompletion3DTracking/blob/master/results/0029_Ours_Reconstruction.gif" width="400">
+</div>
+
+
+
