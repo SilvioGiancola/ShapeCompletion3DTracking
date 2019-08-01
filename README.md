@@ -69,16 +69,16 @@ OPT:
     --tiny: use a tiny set of KITTI Tracking
 ```
 
-### Visualize the results
+## Visualize the results
 
 You can create the GIF visualization from the supplementary material running
 the following command:
 
-python VisualizeTracking.py --model_name Ours --track 29 --path_KITTI <PATH_KITTI>
+`python VisualizeTracking.py --model_name Ours --track 29 --path_KITTI <PATH_KITTI>`
 
-python VisualizeTracking.py --model_name PreTrained --track 29 --path_KITTI <PATH_KITTI>
+`python VisualizeTracking.py --model_name PreTrained --track 29 --path_KITTI <PATH_KITTI>`
 
-python VisualizeTracking.py --model_name Random --track 29 --path_KITTI <PATH_KITTI>
+`python VisualizeTracking.py --model_name Random --track 29 --path_KITTI <PATH_KITTI>`
 
 ```
 usage: VisualizeTracking.py [-h] [--GPU GPU] [--model_name MODEL_NAME]
@@ -99,3 +99,13 @@ optional arguments:
                         path for the KITTI dataset (default:
                         KITTI/tracking/training)
 ```
+
+Tracking and Reconstruction of sample 29 from KITTI Tracking Dataset using our method
+
+<div align="center">
+  <img src="https://github.com/SilvioGiancola/ShapeCompletion3DTracking/blob/master/results/0029_Ours_Tracking.gif" width="400">
+  <img src="https://github.com/SilvioGiancola/ShapeCompletion3DTracking/blob/master/results/0029_Ours_Reconstruction.gif" width="400">
+</div>
+
+
+
