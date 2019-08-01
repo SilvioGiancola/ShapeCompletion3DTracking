@@ -437,7 +437,7 @@ if __name__ == '__main__':
         required=False,
         type=str,
         default="Ours",
-        help='model to infer (Random/Pretrain/Ours)')
+        help='model to infer (Random/PreTrained/Ours)')
     parser.add_argument(
         '--track',
         required=False,
