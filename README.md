@@ -100,6 +100,11 @@ optional arguments:
                         KITTI/tracking/training)
 ```
 
+### Pretraining
+
+`cd pretraining
+`python trainAE_main.py --top_in_dir=<Path to ShapeNet directory>`
+
 Tracking and Reconstruction of sample 29 from KITTI Tracking Dataset:
 
 
