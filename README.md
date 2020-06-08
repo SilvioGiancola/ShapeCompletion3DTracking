@@ -57,7 +57,7 @@ pip install pyquaternion
 
 ### Options
 
-Run `python main.py --help` for a detailled description of the parameters.
+Run `python main.py --help` for a detailed description of the parameters.
 
 ```
 OPT:
@@ -68,6 +68,13 @@ OPT:
     --GPU=1: enforce the use of GPU 1 
     --tiny: use a tiny set of KITTI Tracking
 ```
+
+### Pretraining
+
+```
+cd pretraining
+python trainAE_main.py --top_in_dir=<Path to ShapeNet directory>
+```    
 
 ## Visualize the results
 
@@ -100,10 +107,6 @@ optional arguments:
                         KITTI/tracking/training)
 ```
 
-### Pretraining
-
-`cd pretraining
-`python trainAE_main.py --top_in_dir=<Path to ShapeNet directory>`
 
 Tracking and Reconstruction of sample 29 from KITTI Tracking Dataset:
 
